@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    padind: 0;
+}
+
+h1 {
+    color:rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+}
