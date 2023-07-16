@@ -1,8 +1,18 @@
 import React, { Component, useState } from "react";
 import "../styles/header.css";
 
+function town (){
+    let select = document.getElementById('s1').value;
+    if (!!select){
+        alert(select)
+    }
+    else{alert('!!!!!!!')}
 
-function Header(props) {
+
+}
+
+function Header(props) { 
+
     let buttonName = "Button";
     let [count, setNewCount] = useState(0);
     const hendleClick = () => {
@@ -18,11 +28,20 @@ function Header(props) {
                 </header>
                 <h1 className="h1">Прогноз погоды</h1>
                 <div className="text-field">
-                    {/* <label className="text-feldd-label"></label> */}
-                    <input type="text" className="text-field-input"  id="i-1" placeholder="Введите город"></input>
-                    <button onClick={props.click1} className="button-1" id="btn">push</button>
-                    <p>{props.city}</p>
+                <input type="text" className="text-field-input"  id="i-1" placeholder="Введите город"></input>
+                    
+                <select className="town" id="s1">
+                    <option value="" >Или выберите город из списка:</option>
+                    <option value="moscow" >Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="тюмень" >Тюмень</option>
+                    
+                </select>
+                <button onClick={props.click1} className="button-1" id="btn">поиск</button>
+
                 </div>
+
             </div>
             
         </div>

@@ -11,7 +11,7 @@ export function Coor (city){
     const [Lat, setLat] = useState([]);
     const [Lon, setLon] = useState([]);
     if(!Lat.length){
-        axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${api_key}`).then(res => {
+        axios.get(`http://api.openweathermap.org/geo/1.0/direct?lang=ru&q=${city}&limit=1&appid=${api_key}`).then(res => {
             console.log("coor", res.data);
             setLat([res.data[0].lat]);
             setLon([res.data[0].lon]);
