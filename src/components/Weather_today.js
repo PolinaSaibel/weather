@@ -41,7 +41,6 @@ export default function Weather_today (props) {
       <div className="clouds">
         {Weather.map(W => <p key={W.id}>  <img src={`https://openweathermap.org/img/wn/${W.icon}.png`} alt="" width="60"/> <p>{W.description}</p></p>)}
       </div>
-      
       <div className="tempirature">
         {Main.map(m => 
         <p>

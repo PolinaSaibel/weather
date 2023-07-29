@@ -1,3 +1,21 @@
-tr {
-    background: #f9dede;
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+tr.h1 {   
+    margin-block-start: 0px;
+
+    align-self: center;
+    color: #000000;
+    font-size: 30px;
+    font-family: Lalezar;
+}
+
+
+.thead {
+    color: #000;
+    background: rgba(98, 176, 194, 0.62);
+    font-size: 20px;
+    font-family: Lalezar;
 }

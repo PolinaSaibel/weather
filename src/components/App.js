@@ -4,9 +4,10 @@ import "../styles/App.css";
 import Header from "./Header";
 
 import Weather_today from "./Weather_today";
-import Weather5 from "./Weather_for_5days";
 
-import Coor from "./coor";
+import Five_days from "./5days";
+
+
 
 
 function App () {
@@ -27,8 +28,10 @@ function App () {
     return(
         <React.Fragment>
             <Header click1={click2} city={city}  />
+            
             <Weather_today city={city} />
-            <Weather5 city={city} />
+            <Five_days city={city} />
+            
 
         </React.Fragment>
     );

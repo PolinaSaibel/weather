@@ -1,17 +1,10 @@
 import React, { Component, useState } from "react";
 import "../styles/header.css";
 
-function town (){
-    let select = document.getElementById('s1').value;
-    if (!!select){
-        alert(select)
-    }
-    else{alert('!!!!!!!')}
 
-
-}
 
 function Header(props) { 
+    const city = props.city;
 
     let buttonName = "Button";
     let [count, setNewCount] = useState(0);
@@ -39,6 +32,7 @@ function Header(props) {
                     
                 </select>
                 <button onClick={props.click1} className="button-1" id="btn">поиск</button>
+
 
                 </div>
 

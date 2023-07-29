@@ -1,9 +1,9 @@
 .firstUl {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     justify-items: center;
     background: #ffff;
-    width: 50%;
+    width: auto;
     margin: 1% auto;
 
 }
@@ -11,4 +11,16 @@
 .cityname {
     font-size: 30px;
     align-self: center;
+
+}
+.clouds {
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.tempirature {
+    font-size: 20px;
+    align-self: center;
+
 }
